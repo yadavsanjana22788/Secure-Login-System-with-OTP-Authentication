@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This line is very important -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Secure Login System</title>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Secure Login System</h1>
+
+    <input type="email" id="email" placeholder="Enter Email">
+
+    <button onclick="sendOTP()">Send OTP</button>
+
+    <input type="text" id="otpInput" placeholder="Enter OTP">
+
+    <button onclick="verifyOTP()">Verify OTP</button>
+
+    <button id="resendBtn" onclick="sendOTP()" disabled>
+        Resend OTP (60s)
+    </button>
+
+    <p id="message"></p>
+</div>
+
+<div class="section">
+    <h2>About</h2>
+    <p>
+        This Secure OTP Login System is a simple authentication project
+        that generates a One-Time Password (OTP) for user login verification.
+        
+    </p>
+</div>
+
+<div class="section">
+    <h2>Contact</h2>
+    <h2>Yadav Sanjana </h2>
+    <p>Email: yadavsanjana2278@gmail.com</p>
+    <p>Phone: +91 7600060721</p>
+    <p>Location: Surat, Gujarat</p>
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
